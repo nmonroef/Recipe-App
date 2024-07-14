@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1 id="foodName"></h1>
+    </section>
+    <div class="mainContainer">
+      <section class="leftSection">
+        <section class="find">
+          <h2>Search Recipes by Name</h2>
+          <input id="input" type="text" placeholder="Recipe name here" />
+          <button id="button" type="button">Start Cooking</button>
+        </section>
+        <section class="info">
+          <h2>Timing and Portions</h2>
+          <ul id="listItems"></ul>
+        </section>
+        <section class="ingredients">
+          <h2>Ingredients and Measurements</h2>
+          <ul id="ingredientsItems"></ul>
+        </section>
+      </section>
+      <section class="rightSection">
+        <section class="imgContainer">
+          <img id="recipeImage" src="" alt="Recipe Image" />
+        </section>
+        <section class="direction">
+          <h2>Instructions</h2>
+          <ul id="instructionsItems"></ul>
+        </section>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
