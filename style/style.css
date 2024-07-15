@@ -8,8 +8,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: #FFFFFF; /* White font color for contrast */
-    background-color: #333333; /* Charcoal gray background */
+    color: #000000fd; /* White font color for contrast */
+    background-color: #c9bdbd81; /* Charcoal gray background */
 }
     
 
@@ -21,14 +21,14 @@ h2 {
     width: 80%;
     margin-left: 10%;
     margin-top: 2%;
-    border-top:  #FFFF00 2px solid;
-    border-bottom:  #FFFF00 2px solid;
+    border-top:  #1f1e1e 2px solid;
+    border-bottom:  #1f1e1e 2px solid;
 }
 .header #foodName {
     text-align: center;
     font-size:35px;
     padding-bottom: 10px;
-    color: #FFFF00;
+    color: #080808;
 }
 .mainContainer {
    display: flex; 
@@ -84,10 +84,10 @@ h2 {
 }
 .mainContainer .leftSection .ingredients ul li {
     font-size: 21px;
-    color: #FFFF00;
+    color: #0a0a0a;
 }
 .rightSection .imgContainer {
-    border: solid 2px black;
+    
     height: 500px;
     width: 100%;
     margin-top: 40px;

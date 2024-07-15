@@ -9,6 +9,7 @@ function runAPI () {
     .then(res => {
         if(!res.ok) {
             throw new Error("Network response was not ok")
+            
         }
         return res.json()
     })
@@ -19,11 +20,21 @@ function runAPI () {
         recipeImage.src = data.image;
         foodName.innerText = data.name;
         listItems(data)
-        listIngredients(data.filling);
+        listIngredients(data.ingredients);
         instructionsList(data.instructions)
     })
     .catch(err => {
         console.error('Error fetching data:', err)
+        let errorMesg = document.getElementById("errorMesg");
+       
+        errorMesg.innerText = "Recipe not found. Please try another search.";
+        // Clear previous recipe details
+        document.getElementById("recipeImage").src = "";
+        document.getElementById("foodName").innerText = "";
+        document.getElementById("listItems").innerText = "";
+        document.getElementById("ingredientsItems").innerText = "";
+        document.getElementById("instructionsItems").innerText = "";
+
     });
 }
 // function to display timing and portions 
