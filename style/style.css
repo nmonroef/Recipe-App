@@ -2,119 +2,143 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-body {
     font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: #000000fd; /* White font color for contrast */
-    background-color: #c9bdbd81; /* Charcoal gray background */
 }
-    
 
-h2 {
-    text-align: center;
+body {
+    background-color: #f0f8f7; /* Light white blue background */
+    color: #333; /* Dark gray font color */
+    line-height: 1.6;
+    font-size: 18px;
 }
+
 .header {
-    height: 50px;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 2%;
-    border-top:  #1f1e1e 2px solid;
-    border-bottom:  #1f1e1e 2px solid;
-}
-.header #foodName {
     text-align: center;
-    font-size:35px;
-    padding-bottom: 10px;
-    color: #080808;
+    padding: 40px 0;
+    background-color: rgba(139, 216, 189, 0.9); /* Semi-transparent dark green background */
+    color: #fff; /* White font color */
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Soft text shadow */
 }
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 .mainContainer {
-   display: flex; 
-   
-}
-.mainContainer .leftSection {
     display: flex;
-    flex-direction: column; /* Stack info and ingredients vertically */
-    width: 50%; /* Adjust width for left section */
-}
-.mainContainer .leftSection .info  {
-    height: 200px;
-    width: 33%;
-    margin-left: 20%;
-    border: solid black 2px;
+    justify-content: space-around;
+    align-items: flex-start;
     margin-top: 40px;
-    font-size: 20px;
-    font-weight: 500;
-    border-color: #2F4F4F;
 }
-.mainContainer .leftSection .info h2 {
-    font-size: 25px;
+
+.leftSection {
+    width: 50%;
     text-align: center;
-    padding-bottom: 5px;
 }
- ul {
-    list-style-type: none;
+
+.find {
+    padding: 20px;
+    background-color: rgba(139, 216, 189, 0.4); /* Semi-transparent dark green background */
+    border: 2px solid rgba(139, 216, 189, 0.9); /* Dark green border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
- li {
-    padding: 5px;
+
+.find h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray font */
 }
-.mainContainer .leftSection .find  {
-    height: 150px;
-    width: 33%;
-    margin-left: 20%;
-    border: solid black 2px;
-    margin-top: 40px;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-    border-color: #2F4F4F;
+
+.find input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid rgba(139, 216, 189, 0.9); /* Dark green border */
+    background-color: transparent;
+    color: #333; /* Dark gray font color */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
-.mainContainer .leftSection .find input {
-    margin: 10px;
+
+.find button {
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(139, 216, 189, 0.9); /* Semi-transparent dark green button */
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: background-color 0.3s ease;
 }
-.mainContainer .leftSection .ingredients {
-    height: 420px;
-    width: 33%;
-    margin-left: 20%;
-    border: solid black 2px;
-    margin-top: 40px;
-    border-color:#2F4F4F ;
+
+.find button:hover {
+    background-color: rgba(105, 185, 153, 0.9); /* Darker semi-transparent green on hover */
 }
-.mainContainer .leftSection .ingredients ul li {
-    font-size: 21px;
-    color: #0a0a0a;
-}
-.rightSection .imgContainer {
-    
-    height: 500px;
-    width: 100%;
-    margin-top: 40px;
-    overflow: hidden;
-    position: relative;
-    border-color: #2F4F4F;
-}
-.rightSection .imgContainer image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;    
-}
-.rightSection .direction {
-    border: solid 2px black;
-    height: 300px;
-    width: 100%;
-    margin-top: 25px;
-    border-color: #2F4F4F;
-}
-.rightSection .direction ul li {
-    font-size: 20px;
-}
+
 .rightSection {
-   
-    margin-left: -20%;
-    width: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.imgContainer {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.imgContainer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray font */
+}
+
+.imgContainer img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.direction {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.direction h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333; /* Dark gray font */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftSection, .rightSection {
+        width: 100%;
+    }
 }

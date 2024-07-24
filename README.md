@@ -1,8 +1,10 @@
 # Recipe App
 
+## Overview
+
 This project is a web-based recipe application that allows users to search for recipes by name and displays detailed information including ingredients, preparation instructions, and cooking times. If a recipe is not found, the app provides feedback to the user.
 
-## Features
+### Features
 
 - **Search Recipes**: Users can enter a recipe name in the input field and click "Start Cooking" to search for recipes.
 - **Display Recipe Details**: Upon successful search, the app displays the recipe name, an image, preparation time, total cooking time, servings, ingredients with measurements, and step-by-step instructions.
@@ -11,15 +13,16 @@ This project is a web-based recipe application that allows users to search for r
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript
+### Frontend
 
-  - **HTML**: Structure of the webpage.
-  - **CSS**: Styling of the UI for visual appeal.
-  - **JavaScript**: Fetches data from the backend API and dynamically updates the UI based on the retrieved data.
+- **HTML**: Structure of the webpage.
+- **CSS**: Styling of the UI for visual appeal.
+- **JavaScript**: Fetches data from the backend API and dynamically updates the UI based on the retrieved data.
 
-- **Backend**: Node.js, Express.js
-  - **Node.js**: JavaScript runtime environment.
-  - **Express.js**: Web application framework for Node.js, used to handle routing and API requests.
+### Backend
+
+- **Node.js**: JavaScript runtime environment.
+- **Express.js**: Web application framework for Node.js, used to handle routing and API requests.
 
 ## Directory Structure
 
@@ -34,3 +37,14 @@ This project is a web-based recipe application that allows users to search for r
 2. **Install Dependencies**: `npm install`
 3. **Run Server**: `node server.js`
 4. **Access Application**: Open a web browser and go to `http://localhost:8000`
+
+## API Endpoint
+
+The backend API provides recipe data based on the recipe name entered by the user. It responds with JSON data containing recipe details such as name, image URL, preparation time, total cooking time, servings, ingredients list, and step-by-step instructions.
+
+### Example API Request
+
+```plaintext
+GET /api/:recipeName
+
+```
